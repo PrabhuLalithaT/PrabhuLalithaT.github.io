@@ -147,3 +147,16 @@ footer {
   background: #ddd;
   color: #111;
 }
+.hero-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 4px solid #5ef1f7;
+}
+.project-img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}

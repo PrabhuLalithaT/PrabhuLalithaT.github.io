@@ -6,15 +6,19 @@
   <title>Your Name | Creative Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
 </head>
 <body>
-  <header>
-    <div class="hero">
-      <h1>Hello, I'm <span>Your Name</span></h1>
-      <p>A creative developer & designer</p>
-      <a href="#projects" class="cta">View My Work</a>
-    </div>
-  </header>
+ <header>
+  <div class="hero">
+    <img src="me.jpg" alt="My Photo" class="hero-img" />
+    <h1>Hello, I'm <span>Prabhu Lalitha T</span></h1>
+    <p>A creative developer & designer</p>
+    <a href="#projects" class="cta">View My Work</a>
+  </div>
+</header>
+
 
   <section id="about">
     <h2>About Me</h2>
@@ -28,20 +32,25 @@
       <span>Figma</span><span>GitHub</span><span>Node.js</span><span>Python</span>
     </div>
   </section>
+<section id="experience">
+  <h2>Experience</h2>
+  <ul>
+    <li><strong>Frontend Developer</strong> at ABC Corp – Jan 2024–Present</li>
+    <li><strong>Intern</strong> at XYZ Startup – June 2023–Dec 2023</li>
+  </ul>
+</section>
 
-  <section id="projects">
+  <section id="projects" data-aos="fade-up">
     <h2>Projects</h2>
     <div class="projects-container">
       <div class="project-card">
-        <h3>Project One</h3>
-        <p>A short description of your awesome project.</p>
-        <a href="#">View Project</a>
-      </div>
-      <div class="project-card">
-        <h3>Project Two</h3>
-        <p>Another one of your creative works.</p>
-        <a href="#">View Project</a>
-      </div>
+  <img src="project1.jpg" alt="Project 1 Screenshot" class="project-img" />
+  <h3>Awesome Project</h3>
+  <p>Built with React & Node.js, this app helps users plan their tasks visually.</p>
+  <a href="https://github.com/yourusername/project1" target="_blank">GitHub</a>
+  <a href="https://project1.live" target="_blank">Live Demo</a>
+</div>
+
     </div>
   </section>
 
@@ -53,5 +62,12 @@
   <footer>
     <p>© 2025 Your Name. All rights reserved.</p>
   </footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+
 </body>
 </html>
