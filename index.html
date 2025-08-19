@@ -17,6 +17,7 @@
     <p>A creative Software developer & designer you can connect with! :)</p>
     <a href="#projects" class="cta">View My Work</a>
   </div>
+  <div class="blob"></div>
 </header>
 
 
@@ -27,19 +28,38 @@
 
   <section id="skills">
     <h2>Skills</h2>
-    <div class="skills-grid">
-      <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span>
+    <div class="tech-tags">
+      <span>HTML</span><span>CSS</span>
+        <div class="skill-bar">
+          <span>JavaScript</span>
+          <div class="bar"><div style="width: 80%"></div></div>
+        </div>
+
+      <span>React</span>
       <span>Figma</span><span>GitHub</span><span>Node.js</span><span>Python</span>
       <span>Node.js</span>
     </div>
   </section>
 <section id="experience">
   <h2>Experience</h2>
-  <ul>
-    <li><strong>Frontend Developer</strong> at ABC Corp – Jan 2024–Present</li>
-    <li><strong>Intern</strong> at XYZ Startup – June 2023–Dec 2023</li>
-  </ul>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="dot"></div>
+      <div class="content">
+        <h3>Frontend Developer @ ABC Corp</h3>
+        <p>Jan 2024 – Present</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="dot"></div>
+      <div class="content">
+        <h3>Intern @ XYZ Startup</h3>
+        <p>June 2023 – Dec 2023</p>
+      </div>
+    </div>
+  </div>
 </section>
+
 
   <section id="projects" data-aos="fade-up">
     <h2>Projects</h2>
@@ -64,9 +84,15 @@
     <p>© 2025 Your Name. All rights reserved.</p>
   </footer>
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
 <script>
-  AOS.init();
+  ScrollReveal().reveal('section', {
+    distance: '60px',
+    duration: 1000,
+    easing: 'ease-out',
+    origin: 'bottom',
+    interval: 200
+  });
 </script>
 
 
